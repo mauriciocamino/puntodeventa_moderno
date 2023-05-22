@@ -32,6 +32,12 @@ function validate_request_data($request)
   $mat_store = store();
   if ($mat_store['fac_electronica'] == 'S') {
 
+
+    if (($request->post['type_document'])=="CI"){
+    throw new Exception('Tipo documento es igual a CI');
+    }
+
+
     if (!validateString($request->post['type_document']))
       throw new Exception('Tipo documento es obligatorio');
 

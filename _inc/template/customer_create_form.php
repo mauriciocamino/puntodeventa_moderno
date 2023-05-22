@@ -13,12 +13,10 @@
     }
 
     $tipo_doc  = array(
-      "CC" => "Cedula Ciudadania",
-      "NIT" => "Nit",
+      "CI" => "Cedula Identidad",
+      "RUC" => "RUC",
       "PASAPORTE" => "Pasaporte",
-      "RC" => "Registro Civil",
-      "TI" => "Tarjeta Identidad",
-      "CE" => "Cedula Extrangeria");
+      );
     $option ='';
     foreach ($tipo_doc as $k => $v) {
       $option .= "<option value='$k'>$v</option>";
