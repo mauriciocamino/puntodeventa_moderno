@@ -1,0 +1,72 @@
+[27-Nov-2020 19:18:16 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/helper/common.php on line 783
+[27-Nov-2020 19:18:16 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 19
+[27-Nov-2020 19:18:16 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 26
+[27-Nov-2020 19:18:16 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 33
+[27-Nov-2020 20:05:51 America/Bogota] PHP Warning:  fwrite() expects parameter 1 to be resource, null given in /home/miacceso/demopos.miaccesoweb.com/_inc/lib/log.php on line 18
+[27-Nov-2020 20:05:51 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/helper/common.php on line 783
+[27-Nov-2020 20:05:51 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 19
+[27-Nov-2020 20:05:51 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 26
+[27-Nov-2020 20:05:51 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 33
+[27-Nov-2020 20:05:55 America/Bogota] PHP Warning:  fwrite() expects parameter 1 to be resource, null given in /home/miacceso/demopos.miaccesoweb.com/_inc/lib/log.php on line 18
+[27-Nov-2020 20:05:55 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/helper/common.php on line 783
+[27-Nov-2020 20:05:55 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 19
+[27-Nov-2020 20:05:55 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 26
+[27-Nov-2020 20:05:55 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 33
+[27-Nov-2020 20:06:27 America/Bogota] PHP Warning:  fwrite() expects parameter 1 to be resource, null given in /home/miacceso/demopos.miaccesoweb.com/_inc/lib/log.php on line 18
+[27-Nov-2020 20:06:27 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/helper/common.php on line 783
+[27-Nov-2020 20:06:27 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 19
+[27-Nov-2020 20:06:27 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 26
+[27-Nov-2020 20:06:27 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 33
+[27-Nov-2020 20:06:45 America/Bogota] PHP Warning:  fwrite() expects parameter 1 to be resource, null given in /home/miacceso/demopos.miaccesoweb.com/_inc/lib/log.php on line 18
+[27-Nov-2020 20:06:45 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/helper/common.php on line 783
+[27-Nov-2020 20:06:45 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 19
+[27-Nov-2020 20:06:45 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 26
+[27-Nov-2020 20:06:45 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 33
+[27-Nov-2020 20:06:48 America/Bogota] PHP Warning:  fwrite() expects parameter 1 to be resource, null given in /home/miacceso/demopos.miaccesoweb.com/_inc/lib/log.php on line 18
+[27-Nov-2020 20:06:48 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/helper/common.php on line 783
+[27-Nov-2020 20:06:48 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 19
+[27-Nov-2020 20:06:48 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 26
+[27-Nov-2020 20:06:48 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 33
+[27-Nov-2020 20:07:17 America/Bogota] PHP Warning:  fwrite() expects parameter 1 to be resource, null given in /home/miacceso/demopos.miaccesoweb.com/_inc/lib/log.php on line 18
+[27-Nov-2020 20:07:17 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/helper/common.php on line 783
+[27-Nov-2020 20:07:17 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 19
+[27-Nov-2020 20:07:17 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 26
+[27-Nov-2020 20:07:17 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 33
+[27-Nov-2020 20:07:22 America/Bogota] PHP Warning:  fwrite() expects parameter 1 to be resource, null given in /home/miacceso/demopos.miaccesoweb.com/_inc/lib/log.php on line 18
+[27-Nov-2020 20:07:22 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/helper/common.php on line 783
+[27-Nov-2020 20:07:22 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 19
+[27-Nov-2020 20:07:22 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 26
+[27-Nov-2020 20:07:22 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 33
+[27-Nov-2020 20:07:27 America/Bogota] PHP Warning:  fwrite() expects parameter 1 to be resource, null given in /home/miacceso/demopos.miaccesoweb.com/_inc/lib/log.php on line 18
+[27-Nov-2020 21:08:46 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/helper/common.php on line 783
+[27-Nov-2020 21:08:46 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 19
+[27-Nov-2020 21:08:46 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 26
+[27-Nov-2020 21:08:46 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 33
+[27-Nov-2020 21:11:14 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/helper/common.php on line 783
+[27-Nov-2020 21:11:14 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 19
+[27-Nov-2020 21:11:14 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 26
+[27-Nov-2020 21:11:14 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 33
+[27-Nov-2020 21:12:42 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/helper/common.php on line 783
+[27-Nov-2020 21:12:42 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 19
+[27-Nov-2020 21:12:42 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 26
+[27-Nov-2020 21:12:42 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 33
+[27-Nov-2020 22:40:31 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/helper/common.php on line 783
+[27-Nov-2020 22:40:31 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 19
+[27-Nov-2020 22:40:31 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 26
+[27-Nov-2020 22:40:31 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 33
+[27-Nov-2020 23:47:30 America/Bogota] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home/miacceso/demopos.miaccesoweb.com/admin/sell_return.php on line 103
+[27-Nov-2020 23:47:30 America/Bogota] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home/miacceso/demopos.miaccesoweb.com/admin/sell_return.php on line 128
+[28-Nov-2020 10:53:02 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/helper/common.php on line 783
+[28-Nov-2020 10:53:02 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 19
+[28-Nov-2020 10:53:02 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 26
+[28-Nov-2020 10:53:02 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 33
+[28-Nov-2020 10:53:10 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/helper/common.php on line 783
+[28-Nov-2020 10:53:10 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 19
+[28-Nov-2020 10:53:10 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 26
+[28-Nov-2020 10:53:10 America/Bogota] PHP Warning:  Division by zero in /home/miacceso/demopos.miaccesoweb.com/_inc/template/partials/progress_group.php on line 33
+[28-Nov-2020 17:58:50 America/Bogota] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home/miacceso/demopos.miaccesoweb.com/admin/sms_report.php on line 132
+[28-Nov-2020 17:58:50 America/Bogota] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home/miacceso/demopos.miaccesoweb.com/admin/sms_report.php on line 163
+[28-Nov-2020 18:00:49 America/Bogota] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home/miacceso/demopos.miaccesoweb.com/admin/sms_report.php on line 132
+[28-Nov-2020 18:00:49 America/Bogota] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home/miacceso/demopos.miaccesoweb.com/admin/sms_report.php on line 163
+[28-Nov-2020 18:02:48 America/Bogota] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home/miacceso/demopos.miaccesoweb.com/admin/sms_report.php on line 132
+[28-Nov-2020 18:02:48 America/Bogota] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home/miacceso/demopos.miaccesoweb.com/admin/sms_report.php on line 163

@@ -1,0 +1,5 @@
+[28-Nov-2020 04:48:32 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to PHPClassic\ExceptionCatcher::handle() must be an instance of Exception, instance of Error given in /home/miacceso/demopos.miaccesoweb.com/_inc/bridges/php/includes/ExceptionCatcher.php:21
+Stack trace:
+#0 [internal function]: PHPClassic\ExceptionCatcher::handle(Object(Error))
+#1 {main}
+  thrown in /home/miacceso/demopos.miaccesoweb.com/_inc/bridges/php/includes/ExceptionCatcher.php on line 21

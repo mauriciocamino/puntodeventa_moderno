@@ -1,0 +1,18 @@
+{
+	"function_not_implemented": "Función no implementada",
+	"file_not_found": "Archivo no encontrado",
+	"listing_filed": "Listado fallido",
+	"moving_failed": "Mover falló",
+	"renaming_failed": "No se pudo cambiar el nombre",
+	"copying_failed": "Error al copiar",
+	"removing_failed": "Eliminación fallida",
+	"removing_failed_directory_not_empty": "No se pudo eliminar, el directorio que está intentando eliminar no está vacío",
+	"saving_failed": "No se pudo guardar",
+	"folder_already_exists": "La carpeta ya existe",
+	"folder_creation_failed": "Error al crear la carpeta",
+	"permissions_change_failed": "Error en el cambio de permisos",
+	"compression_failed": "La compresión falló",
+	"archive_opening_failed": "No se pudo abrir el archivo, está dañado o no es compatible",
+	"extraction_failed": "Extracción fallida",
+	"upload_failed": "Subida fallida"
+}

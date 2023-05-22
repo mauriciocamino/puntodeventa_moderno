@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+      - export DEPLOYPATH=/home/miacceso/posmoderno.miaccesoweb.com/
+      - /bin/cp -R * $DEPLOYPATH
+
