@@ -1,7 +1,10 @@
 <?php 
+
 ob_start();
 session_start();
 include ("../_init.php");
+include ("../_inc/lib/Varios.php");
+include ("../_inc/lib/ValidadorEc.php");
 
 // Check, if user logged in or not
 // If user is not logged in then an alert message
@@ -30,20 +33,18 @@ $user_id = user_id();
 function validate_request_data($request) 
 {
   $mat_store = store();
+  
   if ($mat_store['fac_electronica'] == 'S') {
 
-
-    if (($request->post['type_document'])=="CI"){
-    throw new Exception('Tipo documento es igual a CI');
-    }
-
-
+    
+    
     if (!validateString($request->post['type_document']))
       throw new Exception('Tipo documento es obligatorio');
 
-    if (!validateString($request->post['document']))
+    if (!validateString($request->post['document'])){
+      
       throw new Exception('Numero documento es obligatorio');
-
+    }
     if (!validateString($request->post['customer_name']))
       throw new Exception('Nombres es obligatorio');
 
@@ -140,6 +141,10 @@ function validate_existance($request, $id = 0)
       throw new Exception(trans('error_mobile_exist'));
     }
   }
+
+
+  
+
 }
 
 function add_customer_balance($customer_id, $amount, $pmethod_id,  $notes='')
@@ -448,6 +453,41 @@ if (isset($request->get['customer_id']) AND isset($request->get['action_type']) 
   exit();
 }
 
+
+
+
+function cedula($cedula) {
+  $sum = 0;
+  $sumi = 0;
+  for ($i = 0; $i < strlen($cedula) - 2; $i++) {
+      if ($i % 2 == 0) {
+          $sum += substr($cedula, $i + 1, 1);
+      }
+  }
+  $j = 0;
+  while ($j < strlen($cedula) - 1) {
+      $b = substr($cedula, $j, 1);
+      $b = $b * 2;
+      if ($b > 9) {
+          $b = $b - 9;
+      }
+      $sumi += $b;
+      $j = $j + 2;
+  }
+  $t = $sum + $sumi;
+  $res = 10 - $t % 10;
+  $aux = substr($cedula, 9, 9);
+  if ($res == $aux) {
+      return 1;
+  } else {
+      return 0;
+  }
+}
+
+
+
+
+
 /**
  *===================
  * START DATATABLE
@@ -586,8 +626,12 @@ echo json_encode(
 
 $Hooks->do_action('After_Showing_Customer_List');
 
+
 /**
  *===================
  * END DATATABLE
  *===================
  */
+
+
+

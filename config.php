@@ -83,7 +83,7 @@ define('FILEMANAGERPATH', ROOT.'/storage/products/'.$subdominio);
  */
 
 
-define('FILEMANAGERURL', 'https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-6-1.png');
+define('FILEMANAGERURL', '');
 
 /*
  * --------------------------------------------------------------------
