@@ -39,6 +39,17 @@ function validateEmail($email)
   return filter_var($email, FILTER_VALIDATE_EMAIL);
 }
 
+function write_to_console($data) {
+    echo "<pre>";
+        print_r($data);
+        echo $data;
+    $console = $data;
+    if (is_array($console))
+    $console = implode(',', $console);
+   
+    echo "<script>console.log('Console: " . $console . "' );</script>";
+   }
+
 // PHP 5.2 and above.
 function validateInteger($value)
 {
@@ -241,3 +252,37 @@ function validatePassword($password)
     #must contain 8 characters, 1 uppercase, 1 lowercase and 1 number
     return preg_match('/^(?=^.{8,}$)((?=.*[A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z]))^.*$/', $password);
 }
+
+
+
+
+function cedula($cedula) {
+    $sum = 0;   
+    $sumi = 0;
+    for ($i = 0; $i < strlen($cedula) - 2; $i++) {
+        if ($i % 2 == 0) {
+            $sum += substr($cedula, $i + 1, 1);
+        }
+    }
+    $j = 0;
+    while ($j < strlen($cedula) - 1) {
+        $b = substr($cedula, $j, 1);
+        $b = $b * 2;
+        if ($b > 9) {
+            $b = $b - 9;
+        }
+        $sumi += $b;
+        $j = $j + 2;
+    }
+    $t = $sum + $sumi;
+    $res = 10 - $t % 10;
+    $aux = substr($cedula, 9, 9);
+    if ($res == $aux) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+
+

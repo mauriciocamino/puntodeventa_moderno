@@ -8,7 +8,7 @@
     </span>
     <span class="logo-lg">
       <b title="<?php echo store('name');?>">
-        <?php echo 'KOLOB POS' ?>
+        <?php echo 'MAC POS' ?>
       </b>
     </span>
   </a>

@@ -1,6 +1,9 @@
 <?php 
 
 include("_init.php");
+
+
+
 $document->setTitle(trans('text_login_title'));
 
 // Check, If User Login or Not

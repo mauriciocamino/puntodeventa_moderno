@@ -123,3 +123,5 @@ function has_permission($type, $param)
 	global $user;
 	return $user->hasPermission($type, $param);
 }
+
+

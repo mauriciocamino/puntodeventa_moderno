@@ -6,6 +6,8 @@ include ("../_init.php");
 include ("../_inc/lib/Varios.php");
 include ("../_inc/lib/ValidadorEc.php");
 
+
+
 // Check, if user logged in or not
 // If user is not logged in then an alert message
 if (!is_loggedin()) {
@@ -29,11 +31,22 @@ $customer_model = registry()->get('loader')->model('customer');
 $store_id = store_id();
 $user_id = user_id();
 
+
 // Validate post data
 function validate_request_data($request) 
 {
   $mat_store = store();
+
   
+  if (!cedula(($request->post['document']))){
+    throw new Exception(trans('No de cedula (Documento) incorrecto'));
+  
+  
+  }
+    
+
+
+
   if ($mat_store['fac_electronica'] == 'S') {
 
     
@@ -71,6 +84,9 @@ function validate_request_data($request)
   if (!validateString($request->post['document'])) {
     throw new Exception("Numero documento es obligatorio");
   }
+  
+
+
 
     // Validate customer name
   if (!validateString($request->post['customer_name'])) {
@@ -119,6 +135,10 @@ function validate_request_data($request)
     throw new Exception(trans('error_sort_order'));
   }
 }
+
+
+
+
 
 // Check customer existance by id
 function validate_existance($request, $id = 0)
@@ -456,37 +476,6 @@ if (isset($request->get['customer_id']) AND isset($request->get['action_type']) 
 
 
 
-function cedula($cedula) {
-  $sum = 0;
-  $sumi = 0;
-  for ($i = 0; $i < strlen($cedula) - 2; $i++) {
-      if ($i % 2 == 0) {
-          $sum += substr($cedula, $i + 1, 1);
-      }
-  }
-  $j = 0;
-  while ($j < strlen($cedula) - 1) {
-      $b = substr($cedula, $j, 1);
-      $b = $b * 2;
-      if ($b > 9) {
-          $b = $b - 9;
-      }
-      $sumi += $b;
-      $j = $j + 2;
-  }
-  $t = $sum + $sumi;
-  $res = 10 - $t % 10;
-  $aux = substr($cedula, 9, 9);
-  if ($res == $aux) {
-      return 1;
-  } else {
-      return 0;
-  }
-}
-
-
-
-
 
 /**
  *===================
@@ -633,5 +622,5 @@ $Hooks->do_action('After_Showing_Customer_List');
  *===================
  */
 
-
+ 
 
