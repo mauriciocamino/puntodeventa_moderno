@@ -37,13 +37,11 @@ function validate_request_data($request)
 {
   $mat_store = store();
 
-  
+  if (($request->post['type_document'])=='CI'){
   if (!cedula(($request->post['document']))){
     throw new Exception(trans('No de cedula (Documento) incorrecto'));
-  
-  
   }
-    
+}
 
 
 
@@ -144,6 +142,16 @@ function validate_request_data($request)
 function validate_existance($request, $id = 0)
 {
   
+  if (!empty($request->post['document'])) {
+    $statement = db()->prepare("SELECT * FROM `customers` WHERE `document` = ?");
+    $statement->execute(array($request->post['document']));
+    if ($statement->rowCount() > 0) {
+      throw new Exception(trans('ya existe el cliente'));
+    }
+  }
+
+
+
   // Check email address, if exist or not?
   if (!empty($request->post['customer_email'])) {
     $statement = db()->prepare("SELECT * FROM `customers` WHERE `customer_email` = ? AND `customer_id` != ?");
@@ -160,6 +168,10 @@ function validate_existance($request, $id = 0)
     if ($statement->rowCount() > 0) {
       throw new Exception(trans('error_mobile_exist'));
     }
+
+
+
+
   }
 
 

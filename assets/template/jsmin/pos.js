@@ -10880,7 +10880,7 @@ window.angularApp.factory("PaymentFormModal", ["API_URL", "window", "jQuery", "$
                             "<div bind-html-compile=\"rawHtml\">Loading...</div>" +
                         "</div>" +
                         "<div class=\"modal-footer\">" +
-                            "<button ng-click=\"closePaymentFormModal();\" type=\"button\" class=\"btn btn-danger radius-50\"><i class=\"fa fa-fw fa-close\"></i> Cerrar</button>" +
+                            "<button ng-click=\"closePaymentFormModal();\" type=\"button\" class=\"btn btn-danger radius-50\"><i class=\"fa fa-fw fa-close\"></i> Cerrar fff</button>" +
                             "<button  ng-click=\"checkout();\" type=\"button\" class=\"btn btn-success radius-50\"><i class=\"fa fa-fw fa-money\"></i> Pagar &rarr;</button>" +
                         "</div>",
             controller: function ($scope, $uibModalInstance) {
@@ -10890,7 +10890,7 @@ window.angularApp.factory("PaymentFormModal", ["API_URL", "window", "jQuery", "$
                   method: "GET"
                 })
                 .then(function(response, status, headers, config) {
-                    $scope.modal_title = "Paymentddddddd > " + $scope.customerName;
+                    $scope.modal_title = "Payment > " + $scope.customerName;
                     $scope.rawHtml = $sce.trustAsHtml(response.data);
                     setTimeout(function() {
                         storeApp.bootBooxHeightAdjustment();

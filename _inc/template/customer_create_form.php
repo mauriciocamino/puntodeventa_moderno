@@ -57,12 +57,12 @@
   <div class="">
   <div class="<?php echo $col;?> ">
     <label for="type_person">
-      Tipo Persona<i class="required">*</i>
+      Tipo Persona
     </label>
-    <select type="text" class="form-control" id="type_person" name="type_person" required>
-      <option value="PERSONA_NATURAL" > CEDULA</option>
-      <option value="PERSONA_JURIDICA"> RUC</option>
-      <option value="PASAPORTE"> PASAPORTE</option>
+    <select type="text" class="form-control" id="type_person" name="type_person">
+      <option value="PERSONA_NATURAL" >NATURAL</option>
+      <option value="PERSONA_JURIDICA">JURIDICA</option>
+      <option value="PASAPORTE">EXTRANJERO</option>
     </select>
   </div>
 </div>
