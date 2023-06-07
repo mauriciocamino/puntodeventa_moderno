@@ -6429,7 +6429,7 @@ window.angularApp.factory("PaymentOnlyModal", ["API_URL", "window", "jQuery", "$
                         $scope.rawPaymentMethodHtml = $sce.trustAsHtml(response.data);
                         if ($scope.pmethodCode == 'credit') {
                             if (parseFloat($scope.customerBalance) < parseFloat($scope.order.due)) {
-                                window.toastr.error("¡Saldo insuficiente!", "Advertencia!");
+                                window.toastr.error("¡Saldo insuficiente!ppppppp", "Advertencia!");
                             } else {
                                 $scope.paidAmount = parseFloat($scope.order.due);
                             }

@@ -10925,11 +10925,11 @@ window.angularApp.factory("PaymentFormModal", ["API_URL", "window", "jQuery", "$
                       method: "GET"
                     })
                     .then(function(response, status, headers, config) {
-                        $scope.modal_title = "Cliente > " + $scope.customerName;
+                        $scope.modal_title = "Cliente    > " + $scope.customerName;
                         $scope.rawPaymentMethodHtml = $sce.trustAsHtml(response.data);
                         if ($scope.pmethodCode == 'credit') {
                             if (parseFloat($scope.customerBalance) < parseFloat($scope.totalPayable)) {
-                                window.toastr.error("¡Saldo insuficiente!", "Advertencia!");
+                                window.toastr.error("¡Saldo insuficiente!vvvvvvvv", "Advertencia!");
                             } else {
                                 $scope.paidAmount = $scope.totalPayable;
                             }
@@ -10946,6 +10946,7 @@ window.angularApp.factory("PaymentFormModal", ["API_URL", "window", "jQuery", "$
                     var form = $("#checkout-form");
                     var actionUrl = form.attr("action");
                     var data = form.serialize();
+                    
                     $http({
                         url: window.baseUrl + "/_inc/" + actionUrl,
                         method: "POST",
@@ -11123,7 +11124,7 @@ window.angularApp.factory("PaymentOnlyModal", ["API_URL", "window", "jQuery", "$
                         $scope.rawPaymentMethodHtml = $sce.trustAsHtml(response.data);
                         if ($scope.pmethodCode == 'credit') {
                             if (parseFloat($scope.customerBalance) < parseFloat($scope.order.due)) {
-                                window.toastr.error("¡Saldo insuficiente!", "Advertencia!");
+                                window.toastr.error("¡Saldo insuficiente!uuuuuuu", "Advertencia!");
                             } else {
                                 $scope.paidAmount = parseFloat($scope.order.due);
                             }
@@ -14214,3 +14215,44 @@ $(document).ready(function() {
     });
   });
 });
+
+function pmethod_click(){
+  // Ejemplo de uso:
+  const value = 8; // Valor a pagar en dólares
+  const paymentWays = listPaymentWays(value);
+  
+  console.log(paymentWays);
+    
+
+}
+
+  
+function listPaymentWays(value) {
+    const bills = [1, 5, 10, 20, 50, 100]; // Denominaciones de los billetes
+    const paymentWays = [];
+  
+    function findPaymentWays(remainingValue, index, way) {
+      if (remainingValue === 0) {
+        paymentWays.push(way);
+        return;
+      }
+  
+      if (index >= bills.length || remainingValue < 0) {
+        return;
+      }
+  
+      const bill = bills[index];
+  
+      // No incluir el billete actual en la forma de pago
+      findPaymentWays(remainingValue, index + 1, [...way]);
+  
+      // Incluir el billete actual en la forma de pago
+      findPaymentWays(remainingValue - bill, index, [...way, bill]);
+    }
+  
+    findPaymentWays(value, 0, []);
+  
+    return paymentWays;
+  }
+  
+ 

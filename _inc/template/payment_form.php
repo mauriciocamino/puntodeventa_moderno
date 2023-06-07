@@ -11,16 +11,21 @@ $customer_id = isset($request->get['customer_id']) ? $request->get['customer_id'
 <input type="hidden" name="is_installment_order" value="{{ isInstallmentOrder }}">
 <input type="hidden" name="qref" value="{{ qRef }}">
 
-
 <div class="bootbox-body">
 	<div class="table-selection">
 		<div class="col-lg-3 col-md-3 col-sm-3 bootboox-tab-menu bootboox-container p-0">
 			<div class="list-group">
 				<?php $inc = 0;foreach(get_pmethods() as $pmethod) :?>
-					<a class="text-left list-group-item pmethod_item" id="pmethod_<?php echo $pmethod['pmethod_id']; ?>" href="javascript:void(0)" <?php echo $inc == 0 ? 'ng-init="selectPaymentMethod('.$pmethod['pmethod_id'].',\''.$pmethod['code_name'].'\')"' : null;?> ng-click="selectPaymentMethod('<?php echo $pmethod['pmethod_id']; ?>', '<?php echo $pmethod['code_name']; ?>')" onClick="return false;"><span class="fa fa-fw fa-angle-double-right"></span> <b><?php echo $pmethod['name']; ?>
+					
+					<a class="text-left list-group-item pmethod_item" id="pmethod_<?php echo $pmethod['pmethod_id']; ?>" href="javascript:void(0)" 
+					<?php echo $inc == 0 ? 'ng-init="selectPaymentMethod('.$pmethod['pmethod_id'].',\''.$pmethod['code_name'].'\')"' : null;?> 
+					ng-click="selectPaymentMethod('<?php echo $pmethod['pmethod_id']; ?>', '<?php echo $pmethod['code_name']; ?>')"
+					 onClick="pmethod_click();"><span class="fa fa-fw fa-angle-double-right"></span> <b><?php echo $pmethod['name']; ?>
+					 
 					<?php if (strtolower($pmethod['code_name']) == 'credit'):
 						$customer_balance = get_customer_balance($customer_id);
 						?>
+						
 						<span ng-init="customerBalance='<?php echo $customer_balance;?>'">
 						(<?php echo get_currency_symbol();?><?php echo currency_format($customer_balance);?>)
 						</span>
@@ -32,7 +37,7 @@ $customer_id = isset($request->get['customer_id']) ? $request->get['customer_id'
 		<div class="col-lg-5 col-md-5 col-sm-5 checkout-payment-option bootboox-container">
 			<div class="tab-wrapper tab-cheque bootboox-container tab-cheque-payment">
 
-				<h4 ng-show="pmethodId" class="text-center title"><?php echo trans('text_pmethod'); ?>: <b>{{ pmethodName }}</b></h4>
+				<h4 ng-show="pmethodId" class="text-center title"><?php echo trans('text_pmethod');   ?>: <b>{{ pmethodName }}</b></h4>
 
 				<div class="btn-toolbar" role="toolbar" aria-label="...">
 					 <div class="btn-group btn-group-justified" role="group" aria-label="...">
@@ -58,10 +63,10 @@ $customer_id = isset($request->get['customer_id']) ? $request->get['customer_id'
 						</div>
 					</div>
 				</div>
-
+				
 				<div class="input-group input-group-lg pmethod-field-wrapper">
 					<span class="input-group-addon"><?php echo trans('text_pay_amount'); ?></span>
-					<input id="paid-amount" class="form-control" type="text" name="paid-amount" ng-model="paidAmount" placeholder="<?php echo trans('placeholder_input_an_amount'); ?>" ng-keypress="checkoutWhilePressEnter($event)" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;" onKeyUp="if(this.value<0){this.value='1';}">
+					<input id="paid-amount" class="form-control" type="number" value="{{ totalPayable | formatDecimal:2}}" name="paid-amount" ng-model="paidAmount" placeholder="<?php echo trans('placeholder_input_an_amount'); ?>" ng-keypress="checkoutWhilePressEnter($event)" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;" onKeyUp="if(this.value<0){this.value='1';}">
 				</div>
 				<div class="mt-5">
 					<div class="input-group input-group-xs pmethod-field-wrapper">
@@ -125,6 +130,9 @@ $customer_id = isset($request->get['customer_id']) ? $request->get['customer_id'
 					</div>
 				<?php endif;?>
 			</div>
+
+
+
 		</div>
 
 		<div class="col-lg-4 col-md-4 col-sm-4 order-details bootboox-container">

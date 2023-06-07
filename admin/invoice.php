@@ -196,7 +196,7 @@ include ("left_sidebar.php");
 							        </th>
 							        <?php if ($store == 'S'): ?>
 							        	<th class="w-7">
-							        		DIAN
+							        		SRI
 							        	</th>
 							        <?php endif ?>
 							       </tr>
@@ -232,7 +232,7 @@ include ("left_sidebar.php");
 							        </th>
 							        <?php if ($store == 'S'): ?>
 							        	<th class="w-7">
-							        		DIAN
+							        		SRI
 							        	</th>
 							        <?php endif ?>
 			               		</tr>

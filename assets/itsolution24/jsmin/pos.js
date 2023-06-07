@@ -10889,7 +10889,7 @@ window.angularApp.factory("PaymentFormModal", ["API_URL", "window", "jQuery", "$
                         $scope.rawPaymentMethodHtml = $sce.trustAsHtml(response.data);
                         if ($scope.pmethodCode == 'credit') {
                             if (parseFloat($scope.customerBalance) < parseFloat($scope.totalPayable)) {
-                                window.toastr.error("¡Saldo insuficiente!", "Advertencia!");
+                                window.toastr.error("¡Saldo insuficiente!eeeeee", "Advertencia!");
                             } else {
                                 $scope.paidAmount = $scope.totalPayable;
                             }
@@ -11083,7 +11083,7 @@ window.angularApp.factory("PaymentOnlyModal", ["API_URL", "window", "jQuery", "$
                         $scope.rawPaymentMethodHtml = $sce.trustAsHtml(response.data);
                         if ($scope.pmethodCode == 'credit') {
                             if (parseFloat($scope.customerBalance) < parseFloat($scope.order.due)) {
-                                window.toastr.error("¡Saldo insuficiente!", "Advertencia!");
+                                window.toastr.error("¡Saldo insuficiente!ppppoooo", "Advertencia!");
                             } else {
                                 $scope.paidAmount = parseFloat($scope.order.due);
                             }

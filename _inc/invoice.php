@@ -530,6 +530,9 @@ $columns = array(
             }
         }
     ),
+
+
+    
     array(
         'db' => 'invoice_id',
         'dt' => 'btn_pay',
@@ -588,9 +591,9 @@ $columns = array(
             if (invoice_delete_lifespan() > $selling_date_time) {
                 return '<a class="btn btn-sm btn-block btn-default" href="#" disabled><span class="fa fa-trash"></span></a>';
             }
-            return '<button class="btn btn-sm btn-block btn-danger" id="delete-invoice" title="'.trans('button_delete').'" data-loading-text="..."><i class="fa fa-trash"  data-loading-text="..."></i></button>';
-        }
+            return '<button class="btn btn-sm btn-block btn-danger" id="delete-invoice" title="'.trans('button_delete').'" data-loading-text="..."><i class="fa fa-trash"  data-loading-text="..."></i></button>';        }
     ),
+
     array( 'db' => 'dian_uuid_nc', 'dt' => 'dian_uuid_nc' ),
     array( 'db' => 'dian_estado_nc', 'dt' => 'dian_estado_nc' ),
     array( 'db' => 'dian_uuid', 'dt' => 'dian_uuid' ),
@@ -600,7 +603,8 @@ $columns = array(
         'dt' => 'pdf_dian',
         'formatter' => function($d, $row){
           $html = '';
-          $mensaje =  $row['dian_estado'] == 'error' ? 'Emitir Factura'.$row['dian_json'] :'Emitir Factura';      
+          $mensaje =  $row['dian_estado'] == 'error' ? 'Enviar SRI' :'Error';      
+          //$row['dian_estado'] == 'error' ? 'Error SRI'.$row['dian_json'] :'Emitir Factura';      
 
          if ($row['dian_estado'] == '' || $row['dian_estado'] == 'error') {
          $html .= '<a href="#"  num-fac="'.$row['invoice_id'].'" class="btn btn-warning btn-xs TransmitirFactura  glyphicon glyphicon-export" title="'.$mensaje.'"></a>';
@@ -625,8 +629,11 @@ $columns = array(
 
 
      }
-    )
 
+   
+
+    )
+ 
 );
 
 echo json_encode(

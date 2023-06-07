@@ -410,7 +410,7 @@ function (
     });
 
   $(document).on("click",".TransmitirFactura", function (e) {
-
+        debugger;
             $.ajax({
             url: window.baseUrl + '/_inc/emitir_dian.php?type=TransmititFac',
             type: 'POST',
